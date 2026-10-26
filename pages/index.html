@@ -19,13 +19,15 @@
             <div>
                 <h1>StudentHub</h1>
                 <p>Your Digital Campus Portal</p>
+                
             </div>
 
             <img src="../docs/images/image.png" alt="StudentHub">
         </div>
+        
     </header>
 
-    <nav>
+    <nav id="navMenu">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="register.html">Register</a>
@@ -37,10 +39,48 @@
         <a href="admin.html">Admin</a>
         <a href="faq.html">FAQ</a>
         <a href="feedback.html">Feedback</a>
+        <button id="menuBtn">☰ Menu</button>
+        <button id="themeBtn">Light/Dark Mode</button>
+
     </nav>
-
+    <div id="notice">
+        Welcome to StudentHub!
+    <button id="closeNotice">Close</button>
+</div>
     <main>
+        <section class="page-box">
+    <h2>StudentHub Highlights</h2>
 
+    <div class="slide">
+        <h3>Welcome Students</h3>
+        <p>Explore your digital campus portal.</p>
+    </div>
+
+    <div class="slide">
+        <h3>Campus Events</h3>
+        <p>Discover campus activities.</p>
+    </div>
+
+    <div class="slide">
+        <h3>Student Dashboard</h3>
+        <p>Access your student information.</p>
+    </div>
+
+    <button id="prevBtn">Previous</button>
+    <button id="nextBtn">Next</button>
+</section>
+<section class="page-box">
+    <h2>More Information</h2>
+    <button id="openModal">Open Popup</button>
+</section>
+
+<div id="myModal">
+    <div class="modal-content">
+        <h2>Welcome to StudentHub</h2>
+        <p>Your Digital Campus Portal.</p>
+        <button id="closeModal">Close</button>
+    </div>
+</div>
         <section class="welcome">
             <h2>Welcome to StudentHub</h2>
 
@@ -79,5 +119,6 @@
         <p>&copy; 2026 StudentHub. All Rights Reserved.</p>
     </footer>
 
+<script src="../js/script.js"></script>
 </body>
 </html>
