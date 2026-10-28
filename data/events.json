@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "name": "Web Development Workshop",
+        "category": "Workshop",
+        "location": "Computer Lab"
+    },
+    {
+        "id": 2,
+        "name": "Coding Competition",
+        "category": "Competition",
+        "location": "Seminar Hall"
+    },
+    {
+        "id": 3,
+        "name": "Cultural Festival",
+        "category": "Cultural",
+        "location": "College Ground"
+    },
+    {
+        "id": 4,
+        "name": "Java Programming Workshop",
+        "category": "Workshop",
+        "location": "Computer Lab"
+    },
+    {
+        "id": 5,
+        "name": "Project Presentation",
+        "category": "Competition",
+        "location": "Seminar Hall"
+    },
+    {
+        "id": 6,
+        "name": "Sports Day",
+        "category": "Sports",
+        "location": "College Ground"
+    },
+    {
+        "id": 7,
+        "name": "AI Seminar",
+        "category": "Seminar",
+        "location": "Auditorium"
+    },
+    {
+        "id": 8,
+        "name": "Quiz Competition",
+        "category": "Competition",
+        "location": "Room 101"
+    }
+]

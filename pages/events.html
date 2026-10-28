@@ -3,55 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StudentHub - Events</title>
+    <title>Campus Events - StudentHub</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <header>
         <h1>StudentHub</h1>
-        <p>Your Digital Campus Portal</p>
+        <p>Campus Events</p>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="register.html">Register</a>
+            <a href="events.html">Events</a>
+        </nav>
     </header>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="register.html">Register</a>
-        <a href="login.html">Login</a>
-        <a href="dashboard.html">Dashboard</a>
-        <a href="events.html">Events</a>
-        <a href="profile.html">Profile</a>
-        <a href="contact.html">Contact</a>
-        <a href="admin.html">Admin</a>
-        <a href="faq.html">FAQ</a>
-        <a href="feedback.html">Feedback</a>
-    </nav>
+    <main class="event-container">
+        <h2>Campus Events</h2>
 
-    <main>
-        <section class="page-box">
-            <h2>Campus Events</h2>
-            <p>Welcome to the StudentHub Events page.</p>
+        <input type="text" id="search" placeholder="Search events...">
 
-            <div class="cards">
-                <article class="card">
-                    <h3>Workshop</h3>
-                    <p>Learn new skills.</p>
-                </article>
+        <select id="filter">
+            <option value="All">All Categories</option>
+            <option value="Workshop">Workshop</option>
+            <option value="Competition">Competition</option>
+            <option value="Cultural">Cultural</option>
+            <option value="Sports">Sports</option>
+            <option value="Seminar">Seminar</option>
+        </select>
 
-                <article class="card">
-                    <h3>Competition</h3>
-                    <p>Participate in campus competitions.</p>
-                </article>
+        <select id="sort">
+            <option value="name">Sort by Name</option>
+            <option value="category">Sort by Category</option>
+        </select>
 
-                <article class="card">
-                    <h3>Activities</h3>
-                    <p>Explore campus activities.</p>
-                </article>
-            </div>
-        </section>
+        <p id="message" aria-live="polite">Loading events...</p>
+
+        <div id="eventList" class="event-list"></div>
+
+        <div class="pagination">
+            <button id="prev">Previous</button>
+            <span id="pageNumber"></span>
+            <button id="next">Next</button>
+        </div>
     </main>
 
-    <footer>
-        <p>&copy; 2026 StudentHub</p>
-    </footer>
+    <script src="../js/events.js"></script>
 </body>
 </html>
