@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>StudentHub Login</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <h2>StudentHub Login</h2>
+
+    <form action="../php/login10.php" method="POST">
+        <label>Username or Email:</label><br>
+        <input type="text" name="identity" required maxlength="100"><br><br>
+
+        <label>Password:</label><br>
+        <input type="password" name="password" required><br><br>
+
+        <label>
+            <input type="checkbox" name="remember" value="1">
+            Remember Me
+        </label><br><br>
+
+        <button type="submit">Login</button>
+    </form>
+</body>
+</html>
